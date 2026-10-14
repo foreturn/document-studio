@@ -4,7 +4,7 @@
   "version": "1.2.0",
   "description": "Agent Skills for PowerPoint, Word and Excel workflows using available host capabilities, without a required local scripting runtime.",
   "author": {
-    "name": "Ning Yao"
+    "name": "foreturn"
   },
   "license": "MIT",
   "keywords": [
@@ -21,10 +21,10 @@
       "interface": {
         "displayName": "Document Studio · 文档工作室",
         "shortDescription": "PowerPoint、Word、Excel 文档制作、检查与编辑工作流",
-        "developerName": "Ning Yao",
+        "developerName": "foreturn",
         "category": "Productivity",
         "defaultPrompt": [
-          "以未来科技感风格一句话生成一份包含深色赛博视效与指标卡片的可编辑 PowerPoint 演示文稿。",
+          "根据关于 [主题] 的一句话进行深度思考推演，连贯性完整完成整篇包含五幕前沿叙事、深色赛博视效与HUD数据卡的高保真 PowerPoint 演示文稿。",
           "以硬核科技白皮书规格一句话排版一份包含系统拓扑与高亮卡片的技术方案 Word 报告。",
           "以科技感驾驶舱风格一句话构建一份包含动态指标看板与核心公式的 Excel 工作簿。"
         ]
