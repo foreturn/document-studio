@@ -21,8 +21,9 @@ license: MIT
 - **全篇连贯性自主交付**：将推演结果无缝升维为因果咬合的完整演示文稿。严格贯彻 [全篇连贯性衔接规范](references/storyline-framework.md)，使页与页之间通过转折钩子（Transition Hook）无缝衔接，统一核心术语、数据口径与视觉风格；自主连贯地完整完成整套演示（含全部幻灯片内容、微光卡片、指标大字与配图提示词），拒绝交付半成品大纲。
 - **页面五维解剖学**：每页明确核心结论及承接关系，统一规范顶栏硬核 Tag、动作型观点标题（Action Title）、结构化多栏卡片容器、大字量化指标卡（Hero Metrics）与下一页承接钩子（Transition Hook）。
 - **受众分层与负面约束**：技术评审强化系统分层拓扑与评测跑分；高层汇报侧重商业飞轮与核心 ROI；发布会路演强化全息配图张力与极简短句。自适应选用深色赛博、极客钛冷或新便当网格风格，严格遵循 [排版负面戒律](references/visual-design-system.md)，严禁白底密集文本长篇罗列与陈旧剪贴画。
+- **转场与页内逐级动效编排**：全篇必须规划丝滑转场（平滑淡出、景深缩放或视差滑移）与内容页元素阶梯式入场时序（顶栏标题定焦 -> 导引段落浮入 -> 卡片错落阶梯呈现 -> Hero Metrics 大字数字滚动与微光脉冲），遵循 [演示动效体系](references/visual-design-system.md)；原生 PPTX 映射为切换与形状动画序列（并在备注保留动效方案），HTML 模式映射为 CSS 转场、阶梯入场类与计数器动画。
 - 沿用用户模板和品牌；无指定时采用 16:9、清楚的标题层级、微光卡片和深色留白。内容过多时精炼或拆页，不能仅缩小字体。
-- [PPTX 内容示例](assets/sample-presentation.json) 与 [字段说明](references/pptx-input.md) 供组织内容；将字段映射至所选工具的实际接口，不假定工具直接接受此 JSON。
+- **自由发散与多元版式**：坚决摒弃死板单一的固定模版与千篇一律的分栏。根据每页具体论述职能，自由发散选用全屏沉浸（Hero）、多维便当盒（Bento Grid）、分层架构拓扑（Architecture Flow）、多指标罗盘（HUD Dashboard）与双向对比（Split Comparison）等多样化科技版式，详见 [排版与组件参考](references/pptx-input.md)。
 - 配图应支持论点。按需使用宿主已有的图片生成、素材或绘图能力，遵循 [配图提示词工程规范](references/image-prompt-engineering.md) 组织高保真科技提示词；无法获取素材时说明并采用文字或简单图形，不把提示词当作已生成图片。
 
 ## 编辑现有演示
@@ -32,8 +33,12 @@ license: MIT
 
 ## HTML 模式
 
-可按用户要求使用 [页面模板](assets/deck-template.html)，替换其中 DECK_TITLE、TOTAL_SLIDES、SLIDES_HTML 占位内容。转义用户文字，核对图片资源与翻页行为。模板包含浏览器端样式与交互，依赖外部 CDN，离线交付须处理资源。
-[HTML 内容样例](assets/sample-deck.json) 与 [数据结构](assets/deck-schema.json) 仅供编排参考；样例中的指标是演示文案，不能当作已证实事实。视觉按需读 [视觉与动效](references/visual-design-system.md)，不要把浏览器动画宣称为原生 PowerPoint 动画。
+当用户明确要求 HTML 格式时，大模型应发挥充分的审美与编程能力，直接创作定制化的单文件响应式交互 HTML 演示。
+坚决不机械套用固定占位模板或僵化左右分栏，每一套 HTML 都应结合主题量身定制：
+- 使用现代 Tailwind CSS 灵活组织布局（深色主题、CSS Grid、Flexbox、微透磨砂玻璃拟态、响应式容器）。
+- 自由构思每页独特的视觉结构，支持全屏大视觉、不规则便当卡片、分层拓扑流与 HUD 数据面板。
+- 实现丝滑的换页转场（淡出、景深穿梭、视差滑移）与元素逐级阶梯入场，按需集成数字滚动动画与键盘导航。
+- 动效与视觉按需参阅 [视觉与动效](references/visual-design-system.md)，交付整洁、自洽、开箱即用的单文件 HTML。
 
 ## 验证与交付
 
