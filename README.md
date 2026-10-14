@@ -1,7 +1,7 @@
 # Document Studio
 
 面向 Codex 的纯 Agent Skills 插件，包含 PowerPoint、Word、Excel 三项文档工作流。
-插件标识为 `document-studio`，版本 `0.0.1`。
+插件标识为 `document-studio`，版本 `0.0.2`。
 
 ## 环境与能力边界
 
