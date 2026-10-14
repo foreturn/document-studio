@@ -2,9 +2,6 @@
 name: ppt
 description: 规划、制作、检查和编辑 PowerPoint 演示文稿、PPT、PPTX、科技感演示与路演材料，也支持明确要求的交互式 HTML 演示。用于需要一句话生成科技感幻灯片、页面叙事、图表或视觉排版的任务。
 license: MIT
-metadata:
-  author: foreturn
-  version: "1.2.0"
 ---
 
 # PowerPoint 演示文稿

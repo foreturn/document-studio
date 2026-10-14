@@ -2,9 +2,6 @@
 name: word
 description: 规划、制作、检查、编辑和排版 Word 文档、DOCX、科技方案、白皮书与说明书。用于需要一句话生成科技感报告、标题层级、页眉页脚、表格或分页排版的任务。
 license: MIT
-metadata:
-  author: foreturn
-  version: "1.2.0"
 ---
 
 # Word 文档

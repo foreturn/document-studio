@@ -2,9 +2,6 @@
 name: excel
 description: 规划、制作、检查、编辑和分析 Excel 工作簿、XLSX、CSV、科技感指标看板、预算与含公式的表格。用于需要一句话构建数据看板、单元格数据类型、计算公式、格式或驾驶舱结构的任务。
 license: MIT
-metadata:
-  author: foreturn
-  version: "1.2.0"
 ---
 
 # Excel 工作簿

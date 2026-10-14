@@ -1,6 +1,6 @@
 {
   "name": "document-studio",
-  "version": "1.2.0",
+  "version": "0.0.1",
   "description": "Agent Skills for PowerPoint, Word and Excel workflows using available host capabilities, without a required local scripting runtime.",
   "author": {
     "name": "foreturn"
