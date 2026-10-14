@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnimatedSlideDeckSchema",
+  "description": "Standard schema for Cool Animated Presentation decks conforming to agentskills.io",
+  "type": "object",
+  "required": ["title", "theme", "slides"],
+  "properties": {
+    "title": { "type": "string" },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "style": { "type": "string", "enum": ["dark-cyber", "neo-bento", "luxury-editorial"] },
+        "primary_color": { "type": "string" },
+        "accent_color": { "type": "string" },
+        "motion": {
+          "type": "object",
+          "properties": {
+            "transition": { "type": "string", "enum": ["apple-spring", "depth-scale", "parallax-slide"] },
+            "ken_burns": { "type": "boolean" },
+            "staggered_entrance": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chapter", "title", "content", "transition_hook", "image_prompt"],
+        "properties": {
+          "chapter": { "type": "string" },
+          "tag": { "type": "string" },
+          "title": { "type": "string" },
+          "content": { "type": "string" },
+          "transition_hook": { "type": "string" },
+          "image_prompt": { "type": "string" },
+          "image_url": { "type": "string" },
+          "counters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "target": { "type": "number" },
+                "unit": { "type": "string" },
+                "decimals": { "type": "integer" },
+                "label": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
